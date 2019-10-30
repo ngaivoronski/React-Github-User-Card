@@ -43,9 +43,12 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <h2>Who's github followers would you like to see?</h2>
+        <h1 className="main-title">Github Followers Display</h1>
+        <label htmlFor="username" className="input-label">User select:</label>
         <input
+        className="user-input"
           type="text"
+          name="username"
           value={this.state.user}
           onChange={this.handleChanges}
         />
